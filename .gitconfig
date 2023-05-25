@@ -1,0 +1,31 @@
+[user]
+	name = nnnyykk
+	email = me@nnnyykk.com
+
+[core]
+	pager = delta --light
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[delta]
+    line-numbers = true
+    side-by-side = true
+    line-numbers-left-format = ""
+    line-numbers-right-format = "│ "
+    syntax-theme = none
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

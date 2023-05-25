@@ -1,0 +1,1 @@
+repo/dotfiles/xorg/.xinitrc

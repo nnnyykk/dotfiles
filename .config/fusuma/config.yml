@@ -1,0 +1,4 @@
+swipe:
+  3:
+    up:
+      command: "/home/nnnyykk/repo/dswitcher/dswitcher"

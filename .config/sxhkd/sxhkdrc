@@ -1,0 +1,38 @@
+XF86MonBrightnessUp
+        xbacklight -inc 1
+
+XF86MonBrightnessDown
+        xbacklight -dec 1
+
+XF86Display
+        xrandr-menu
+
+super + r
+        pkill -USR1 -x sxhkd
+
+Print
+        flameshot gui
+
+super + Print
+        screencast
+
+XF86Audio{Lower,Raise}Volume
+        pamixer --allow-boost -{d,i} 3; getvolume
+
+super + space
+        dmenu_run
+
+super + return
+        xst
+
+super + e
+        pcmanfm
+
+alt + p
+        passmenu
+
+alt + f
+        $HOME/.local/bin/browse
+
+alt + shift + 2
+        flameshot gui
