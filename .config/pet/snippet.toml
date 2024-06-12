@@ -1,0 +1,124 @@
+[[snippets]]
+  description = "check ord status"
+  command = "ord -r --cookie-file .cookie --data-dir . info"
+  output = ""
+
+[[snippets]]
+  description = "ord restore wallet"
+  command = "ord -r --cookie-file .cookie --data-dir .  wallet restore \"virtual airport chat uncle direct market celery feature salon rail shallow gain\""
+  output = ""
+
+[[snippets]]
+  description = "ord create receive wallet"
+  command = "ord -r --cookie-file .cookie --data-dir . wallet receive"
+  output = ""
+
+[[snippets]]
+  description = "edit nvim config"
+  command = "nvim ~/.config/nvim/init.vim"
+  output = ""
+
+[[snippets]]
+  description = "aws get oxb param"
+  command = "aws ssm get-parameter --name \"<path>\" --region ap-southeast-1"
+  output = ""
+
+[[snippets]]
+  description = "wifi rescan"
+  command = "nmcli device wifi rescan"
+  output = ""
+
+[[snippets]]
+  description = "check battery"
+  command = "cat /sys/class/power_supply/BAT0/capacity"
+  output = ""
+
+[[snippets]]
+  description = "ord signet"
+  command = "ord -s --data-dir . --index-sats server --http-port 8080"
+  output = ""
+
+[[snippets]]
+  description = "bitcoind signet"
+  command = "bitcoind -signet -txindex"
+  output = ""
+
+[[snippets]]
+  description = "ord index"
+  command = "ord -r --cookie-file .cookie --data-dir . --index-sats index"
+  output = ""
+
+[[snippets]]
+  description = "ord server"
+  command = "ord -r --cookie-file .cookie --data-dir . server --http-port 8080"
+  output = ""
+
+[[snippets]]
+  description = "js convert jsonl to json"
+  command = "jq -s '.' <input> > <output>\\n"
+  output = ""
+
+[[snippets]]
+  description = "remove nigiri data"
+  command = "sudo rm -rf /home/nnnyykk/.nigiri/volumes/bitcoin/regtest"
+  output = ""
+
+[[snippets]]
+  description = "python create env"
+  command = "python3 -m venv env"
+  output = ""
+
+[[snippets]]
+  description = "kill process using port"
+  command = "sudo fuser -k <port>/tcp"
+  output = ""
+
+[[snippets]]
+  description = "print duplicated line"
+  command = "sort FILE | uniq -cd\\n"
+  output = ""
+
+[[snippets]]
+  description = "find process using port"
+  command = "sudo ss -lptn 'sport = :<port>'\\n"
+  output = ""
+
+[[snippets]]
+  description = "check gcp evm node status"
+  command = "curl -H POST -H \"Content-Type: application/json\" -d '{\"jsonrpc\":\"2.0\",\"id\":2586,\"method\":\"eth_syncing\",\"params\":[]}]}' \"https://json-rpc.5ad4x3uz9t81hs5bchp0n2gio.blockchainnodeengine.com?key=AIzaSyBu-IZQ2pi4W_jL2NaLiXgZ1VYiIyVP2Fo\""
+  output = ""
+
+[[snippets]]
+  description = "base sync block number"
+  command = "curl -s -d '{\"id\":0,\"jsonrpc\":\"2.0\",\"method\":\"eth_getBlockByNumber\",\"params\":[\"latest\",false]}' \\\\n  -H \"Content-Type: application/json\" http://34.124.172.156:8545 | jq '.result'.number | xargs printf \"%d\\n\""
+  output = ""
+
+[[snippets]]
+  description = "host server static"
+  command = "python -m http.server 8000"
+  output = ""
+
+[[snippets]]
+  description = "search and remove"
+  command = "rg <term> -l | xargs -I {} sed -i 's/<term>//g' {}"
+  output = ""
+
+[[snippets]]
+  description = "search term and move files to directory"
+  command = "rg <term> -l | xargs -d '\\n' mv -t <directory>"
+  output = ""
+
+[[snippets]]
+  description = "search and replace"
+  command = "rg <term> -l | xargs -I {} sed -i 's/<term>/<replace>/g' {}"
+  output = ""
+
+[[snippets]]
+  description = "Monthly Expense Report"
+  command = "hledger reg expense --monthly --period '<2024-04>'"
+  output = ""
+
+[[snippets]]
+  description = "check sqs arn"
+  command = "awslocal sqs get-queue-attributes --queue-url http://sqs.us-east-1.localhost.localstack.cloud:4566/000000000000/localstack-queue --attribute-names All"
+  output = ""

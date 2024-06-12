@@ -1,11 +1,12 @@
 [Default Applications]
+text/csv=text.desktop
 text/x-shellscript=text.desktop;
 x-scheme-handler/magnet=torrent.desktop;
 application/x-bittorrent=torrent.desktop;
-x-scheme-handler/mailto=userapp-Thunderbird-J89A41.desktop
-text/plain=text.desktop;
+x-scheme-handler/mailto=brave-browser.desktop
+text/plain=text.desktop
 application/postscript=pdf.desktop;
-application/pdf=pdf.desktop;
+application/pdf=pdf.desktop
 image/png=img.desktop;
 image/jpeg=img.desktop;
 image/gif=img.desktop;
@@ -14,7 +15,7 @@ video/x-matroska=video.desktop
 x-scheme-handler/lbry=lbry.desktop
 inode/directory=file.desktop
 x-scheme-handler/postman=Postman.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-CTFMJ1.desktop
+x-scheme-handler/tg=org.telegram.desktop.desktop
 image/heif=userapp-sxiv-ULH1K1.desktop
 x-scheme-handler/web+cardano=brave-browser.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
@@ -22,9 +23,12 @@ x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 message/rfc822=userapp-Thunderbird-J89A41.desktop
 x-scheme-handler/mid=userapp-Thunderbird-J89A41.desktop
 x-scheme-handler/clickup=ClickUp.desktop
+hoppscotch=hoppscotch-handler.desktop
+x-scheme-handler/anytype=anytype.desktop
+application/x-xdg-protocol-tg=/usr/share/applications/brave-browser.desktop
 
 [Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-CTFMJ1.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-CTFMJ1.desktop;org.telegram.desktop.desktop;
 image/jpeg=cups.desktop;NsCDE-PrintMgr.desktop;
 image/heif=userapp-sxiv-ULH1K1.desktop;
 application/pdf=org.pwmt.zathura.desktop;

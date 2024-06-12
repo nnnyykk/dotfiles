@@ -7,25 +7,40 @@ XF86MonBrightnessDown
 XF86Display
         xrandr-menu
 
-super + r
+alt + shift + r
+        xrandr-menu
+
+alt + r
         pkill -USR1 -x sxhkd
+
+alt + c
+        alacritty -e nvim .config/sxhkd/sxhkdrc
 
 Print
         flameshot gui
 
-super + Print
-        screencast
-
 XF86Audio{Lower,Raise}Volume
         pamixer --allow-boost -{d,i} 3; getvolume
 
+alt + a
+        xst -e pulsemixer
+
+alt + w
+        xst -e nmtui
+        
 super + space
         dmenu_run
 
-super + return
-        xst
+alt + space
+        dmenu_run
 
-super + e
+alt + shift + 3
+        flameshot gui
+
+alt + shift + 4
+        screencast
+
+alt + e
         pcmanfm
 
 alt + p
@@ -36,3 +51,36 @@ alt + f
 
 alt + shift + 2
         flameshot gui
+
+super + h
+        shodc focus -L
+
+super + l
+        shodc focus -R
+
+super + k
+        shodc focus -T
+
+super + j
+        shodc focus -B
+
+super + 1
+        shodc goto 1
+
+super + shift + 1
+        shodc sendto 1
+
+super + 2
+        shodc goto 2
+
+super + shift + 2
+        shodc sendto 2
+
+super + 3
+        shodc goto 3
+
+super + shift + 3
+        shodc sendto 3
+
+super + Return
+        alacritty
